@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Apple-Grade Design Tokens & Variables
+   Aadarsh Soni — Developer · Designer · Future Hacker
+   ========================================================================== */
+
+:root {
+  /* 🍏 Core Dark Canvas Colors (Deep Space Black & Obsidian) */
+  --bg-canvas: #06080d;
+  --bg-surface: #0c1017;
+  --bg-surface-elevated: #131924;
+  --bg-card: rgba(16, 22, 34, 0.65);
+  --bg-card-hover: rgba(22, 30, 46, 0.85);
+  --bg-glass-nav: rgba(10, 14, 23, 0.72);
+  --bg-glass-pill: rgba(255, 255, 255, 0.06);
+  --bg-glass-pill-hover: rgba(255, 255, 255, 0.12);
+
+  /* 🌈 7 Spectral Chromatic Wave Palette (VIBGYOR) */
+  --spectral-red: #ff3b30;
+  --spectral-orange: #ff9500;
+  --spectral-yellow: #ffd60a;
+  --spectral-green: #30d158;
+  --spectral-cyan: #00c7be;
+  --spectral-blue: #0a84ff;
+  --spectral-indigo: #5e5ce6;
+  --spectral-violet: #bf5af2;
+
+  /* 💎 Primary Accents (Cyber Apple) */
+  --accent-primary: #00f5a0;       /* Cyber Mint / Emerald */
+  --accent-secondary: #00d2ff;     /* Laser Cyan */
+  --accent-tertiary: #5e5ce6;      /* Deep Iris */
+  --accent-glow: rgba(0, 245, 160, 0.28);
+  --accent-gradient: linear-gradient(135deg, #00f5a0 0%, #00d2ff 50%, #5e5ce6 100%);
+  --accent-gradient-warm: linear-gradient(135deg, #ffd60a 0%, #ff9500 50%, #ff3b30 100%);
+
+  /* 🪞 Apple Glass Specular Borders & Outlines */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-glass: rgba(255, 255, 255, 0.14);
+  --border-specular: rgba(255, 255, 255, 0.28);
+  --border-glow: rgba(0, 245, 160, 0.45);
+
+  /* ✍️ Luxury Tech & Apple Typography Scale (Outfit / Space Grotesk / Inter / JetBrains Mono) */
+  --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+  --font-tech: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
+
+  --text-primary: #ffffff;
+  --text-secondary: #cbd5e1;
+  --text-tertiary: #94a3b8;
+  --text-muted: #64748b;
+
+  /* ⚡ Apple Kinetic Spring Easings & Durations */
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);     /* Apple signature deceleration */
+  --ease-elastic: cubic-bezier(0.34, 1.56, 0.64, 1); /* Bouncy micro-reactions */
+  --ease-smooth: cubic-bezier(0.25, 1, 0.5, 1);
+
+  --duration-fast: 180ms;
+  --duration-normal: 320ms;
+  --duration-slow: 600ms;
+  --duration-cinematic: 1000ms;
+
+  /* 📐 Layout Geometry & Spacing */
+  --container-max: 1240px;
+  --nav-height: 72px;
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  /* 🔮 Blur Strengths */
+  --blur-nav: 24px;
+  --blur-card: 20px;
+  --blur-ambient: 120px;
+
+  /* 🖱️ Specular Mouse Coordinate Defaults (updated via JS) */
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+}

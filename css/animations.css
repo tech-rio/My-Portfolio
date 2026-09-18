@@ -1,0 +1,192 @@
+/* ==========================================================================
+   Apple-Grade Spring Animations & Kinetic Effects
+   ========================================================================== */
+
+/* 🍏 Reveal Staggers & Blur-to-Sharp Transitions */
+.reveal-init {
+  opacity: 0;
+  transform: translateY(32px) scale(0.98);
+  filter: blur(8px);
+  transition: 
+    opacity var(--duration-slow) var(--ease-spring),
+    transform var(--duration-slow) var(--ease-spring),
+    filter var(--duration-slow) var(--ease-spring);
+  will-change: opacity, transform, filter;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+/* Stagger delay utility classes */
+.delay-1 { transition-delay: 80ms; }
+.delay-2 { transition-delay: 160ms; }
+.delay-3 { transition-delay: 240ms; }
+.delay-4 { transition-delay: 320ms; }
+.delay-5 { transition-delay: 400ms; }
+.delay-6 { transition-delay: 480ms; }
+
+/* 🪞 Specular Cursor Spotlight (Apple VisionOS / macOS Effect) */
+.specular-card {
+  position: relative;
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+  transition: 
+    transform var(--duration-normal) var(--ease-spring),
+    border-color var(--duration-normal) var(--ease-spring),
+    box-shadow var(--duration-normal) var(--ease-spring);
+  backdrop-filter: blur(var(--blur-card));
+  -webkit-backdrop-filter: blur(var(--blur-card));
+}
+
+/* Dynamic radial gradient sheen that follows cursor */
+.specular-card::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.28),
+    rgba(0, 245, 160, 0.18) 30%,
+    transparent 65%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--duration-normal) var(--ease-spring);
+  z-index: 2;
+}
+
+.specular-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    700px circle at var(--mouse-x) var(--mouse-y),
+    rgba(0, 245, 160, 0.07),
+    transparent 50%
+  );
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--duration-normal) var(--ease-spring);
+  z-index: 1;
+}
+
+.specular-card:hover::before,
+.specular-card:hover::after {
+  opacity: 1;
+}
+
+.specular-card:hover {
+  border-color: rgba(0, 245, 160, 0.35);
+  box-shadow: 
+    0 16px 40px -10px rgba(0, 0, 0, 0.5),
+    0 0 35px -5px rgba(0, 245, 160, 0.15);
+}
+
+/* 🧊 3D Perspective Card Tilt Container */
+.tilt-card {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.tilt-inner {
+  transform: translateZ(28px);
+  transform-style: preserve-3d;
+}
+
+/* 🟢 Pulsing Status Beacon */
+.pulsing-beacon {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+  display: inline-block;
+}
+
+.pulsing-beacon::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+  opacity: 0.75;
+  animation: beaconPulse 2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+}
+
+@keyframes beaconPulse {
+  0% { transform: scale(0.8); opacity: 0.8; }
+  100% { transform: scale(2.6); opacity: 0; }
+}
+
+/* 📟 Terminal Scanline Effect */
+.terminal-scanline {
+  position: relative;
+  overflow: hidden;
+}
+
+.terminal-scanline::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0) 50%,
+    rgba(0, 245, 160, 0.04) 50%,
+    rgba(0, 245, 160, 0.04)
+  );
+  background-size: 100% 4px;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* 💫 Shimmer Button Highlights */
+.shimmer-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.15) 50%,
+    transparent 70%
+  );
+  transform: rotate(30deg);
+  animation: shimmerFlow 6s infinite;
+}
+
+@keyframes shimmerFlow {
+  0% { transform: translate(-100%, -100%) rotate(30deg); }
+  20%, 100% { transform: translate(100%, 100%) rotate(30deg); }
+}
+
+/* 🚫 Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

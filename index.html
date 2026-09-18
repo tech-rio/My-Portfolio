@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aadarsh Soni — Developer · Designer · Future Hacker</title>
+  <meta name="description" content="Portfolio of Aadarsh Soni — 18-year-old Full-Stack Developer, Designer, Startup Co-founder and aspiring Ethical Hacker from Jaipur, India. Explore projects in AI, Web, Mobile and Security.">
+  <meta name="author" content="Aadarsh Soni">
+  
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Aadarsh Soni — Developer · Designer · Future Hacker">
+  <meta property="og:description" content="Explore cutting-edge projects in Applied AI, Full-Stack Development, Computer Vision, and Security. 120+ client projects delivered.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Outfit (Display), Space Grotesk (Tech Accent), Inter (Body) & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Apple-Grade Modular CSS Framework -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- 🌌 Ambient Canvas Background Mesh -->
+  <div class="ambient-mesh" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+  </div>
+
+  <!-- 🍏 1. Floating Dynamic Glass Island (Navbar) -->
+  <header class="navbar-wrap">
+    <nav class="navbar-island" id="navbar-island">
+      <a href="#hero" class="nav-brand">
+        <span class="nav-brand-icon">A</span>
+        <span>Aadarsh Soni</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Journey</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="status-pill">
+          <span class="pulsing-beacon"></span>
+          <span>Available</span>
+        </div>
+        <a href="#contact" class="btn-resume">Get in Touch</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">☰</button>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <a href="#about">About</a>
+    <a href="#skills">Tech Stack</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Journey</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main>
+    <!-- 🌈 2. Cinematic Hero Section with 7-Color Chromatic Dispersion Wave -->
+    <section class="hero-section" id="hero">
+      <!-- Live 7-Color Spectral Light Wave Canvas -->
+      <canvas id="prism-canvas"></canvas>
+
+      <div class="container hero-content">
+        <div class="hero-badge reveal-init delay-1">
+          <span class="pulsing-beacon"></span>
+          <span>DEVELOPER · DESIGNER · FUTURE HACKER</span>
+        </div>
+
+        <h1 class="hero-headline reveal-init delay-2">
+          <span class="gradient-sheen">Every system tells a story.</span><br>
+          <span class="accent-highlight">Every vulnerability hides a lesson.</span>
+        </h1>
+
+        <p class="hero-taglines reveal-init delay-3">
+          Every project begins with curiosity.<br>
+          <strong>Developer. Designer. Future Hacker.</strong> The journey has only just begun.
+        </p>
+
+        <div class="hero-cta-group reveal-init delay-4">
+          <a href="#projects" class="btn-primary shimmer-btn">
+            <span>Explore Projects</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <span>Let's Connect</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Quick Stats Strip -->
+        <div class="stats-strip reveal-init delay-5">
+          <div class="stat-item">
+            <div class="stat-number" data-target="120" data-suffix="+">0</div>
+            <div class="stat-label">Client Projects Delivered</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number">Co<span>-Founder</span></div>
+            <div class="stat-label">Tech Startup (2026)</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number">B.Tech<span> CSE</span></div>
+            <div class="stat-label">Jaipur, Rajasthan</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🍏 3. Apple-Style Bento Grid (About & Philosophy) -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header reveal-init">
+          <div class="section-badge">
+            <span class="dot"></span>
+            <span>Who Am I</span>
+          </div>
+          <h2 class="section-title">
+            Curiosity Before Coding. <span class="gradient-text">Ambition Into Reality.</span>
+          </h2>
+          <p class="section-description">
+            I'm Aadarsh Soni, an 18-year-old technologist from Jaipur pursuing B.Tech in CSE. I didn't want to just use technology—I wanted to understand what happens beneath the surface.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Bento Box 1: The Hacker Mindset -->
+          <div class="bento-col-8 specular-card tilt-card bento-card reveal-init delay-1">
+            <div class="tilt-inner">
+              <div class="bento-badge">PHILOSOPHY & ETHICAL HACKING</div>
+              <h3 class="bento-heading">"Development creates systems. Hacking understands them."</h3>
+              <p class="bento-text">
+                Understanding how systems communicate, how vulnerabilities emerge, and how technology behaves at its deepest layers is what ultimately shaped my ambition. My mission is to become a respected ethical hacker, continuously pushing the limits of system security.
+              </p>
+
+              <!-- Interactive Terminal Window -->
+              <div class="terminal-window terminal-scanline">
+                <div class="terminal-header">
+                  <span class="terminal-dot dot-red"></span>
+                  <span class="terminal-dot dot-yellow"></span>
+                  <span class="terminal-dot dot-green"></span>
+                  <span class="terminal-title">bash — aadarsh@security-kernel</span>
+                </div>
+                <div><span class="terminal-prompt">root@aadarsh:~$</span> analyze --target system_architecture</div>
+                <div style="color: #94a3b8;">[+] Scanning protocols, endpoints & auth mechanisms...</div>
+                <div style="color: #30d158;">[✓] 0 vulnerabilities detected. Integrity verified.</div>
+                <div><span class="terminal-prompt">root@aadarsh:~$</span> echo $CORE_MOTTO</div>
+                <div style="color: #ffd60a;">"Determination grows faster than fear."</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Box 2: 120+ Client Projects Stats -->
+          <div class="bento-col-4 specular-card tilt-card bento-card reveal-init delay-2">
+            <div class="tilt-inner" style="height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div class="bento-badge">PROVEN TRACK RECORD</div>
+                <h3 class="bento-heading">120+ Delivered</h3>
+                <p class="bento-text">
+                  Successfully completed over 120 client and freelance deliverables across multiple creative and technical domains.
+                </p>
+              </div>
+
+              <div class="metric-ring-wrap">
+                <div class="metric-circle">
+                  <svg width="140" height="140" viewBox="0 0 140 140">
+                    <defs>
+                      <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#00f5a0"/>
+                        <stop offset="100%" stop-color="#00d2ff"/>
+                      </linearGradient>
+                    </defs>
+                    <circle class="metric-circle-bg" cx="70" cy="70" r="60"/>
+                    <circle class="metric-circle-val" cx="70" cy="70" r="60"/>
+                  </svg>
+                  <div class="metric-center-text">
+                    <span class="metric-center-number">120+</span>
+                    <span class="metric-center-label">Projects</span>
+                  </div>
+                </div>
+              </div>
+
+              <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-tertiary); text-align: center;">
+                Web · Design · Video · Solutions
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Box 3: Startup Journey -->
+          <div class="bento-col-6 specular-card tilt-card bento-card reveal-init delay-3">
+            <div class="tilt-inner">
+              <div class="bento-badge">CO-FOUNDER · 2026</div>
+              <h3 class="bento-heading">Building a Tech Startup</h3>
+              <p class="bento-text">
+                My team and I co-founded our own technology company to build innovative digital products, deliver client technology services, and build scalable solutions that solve real-world problems.
+              </p>
+              <div style="margin-top: 24px; padding: 14px 18px; background: rgba(0, 245, 160, 0.06); border: 1px solid rgba(0, 245, 160, 0.2); border-radius: var(--radius-md); font-size: 0.85rem; color: var(--text-secondary);">
+                🚀 <strong style="color: var(--text-primary);">Focus Areas:</strong> Cloud Infrastructure, Full-Stack Applications, AI Voice Workflows & Modern Enterprise Media.
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Box 4: Multi-Domain Creator -->
+          <div class="bento-col-6 specular-card tilt-card bento-card reveal-init delay-4">
+            <div class="tilt-inner">
+              <div class="bento-badge">CREATIVE & TECHNICAL VERSATILITY</div>
+              <h3 class="bento-heading">Multi-Domain Creator</h3>
+              <p class="bento-text">
+                Combining high-level engineering logic with artistic precision to build complete digital experiences from concept to final render.
+              </p>
+              
+              <div class="creative-chips">
+                <span class="creative-chip">🎬 Premiere Pro</span>
+                <span class="creative-chip">✂️ CapCut</span>
+                <span class="creative-chip">🎨 Photoshop</span>
+                <span class="creative-chip">📐 Illustrator</span>
+                <span class="creative-chip">🎮 Unity 3D</span>
+                <span class="creative-chip">🕹️ Godot</span>
+                <span class="creative-chip">✨ UI/UX Design</span>
+                <span class="creative-chip">📊 Digital Marketing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🛠️ 4. Interactive Tech Stack (iOS-Style Segmented Tabs) -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header reveal-init">
+          <div class="section-badge">
+            <span class="dot"></span>
+            <span>Tech Ecosystem</span>
+          </div>
+          <h2 class="section-title">
+            Technologies <span class="gradient-text">& Tooling.</span>
+          </h2>
+          <p class="section-description">
+            A comprehensive overview of languages, frameworks, databases, and creative suites I utilize to engineer scalable digital systems.
+          </p>
+        </div>
+
+        <!-- Segmented Controls -->
+        <div class="segmented-wrap reveal-init delay-1">
+          <div class="segmented-control" id="tech-filters">
+            <button class="segmented-pill active" data-filter="all">All Tech</button>
+            <button class="segmented-pill" data-filter="frontend">Frontend & Mobile</button>
+            <button class="segmented-pill" data-filter="backend">Backend & Cloud</button>
+            <button class="segmented-pill" data-filter="ai-cyber">AI & Security</button>
+            <button class="segmented-pill" data-filter="creative">Creative & Game</button>
+          </div>
+        </div>
+
+        <!-- Tech Grid -->
+        <div class="tech-grid reveal-init delay-2">
+          <!-- Languages -->
+          <div class="tech-item" data-category="backend frontend">
+            <div class="tech-icon">🐍</div>
+            <div class="tech-name">Python</div>
+            <div class="tech-cat">Language</div>
+          </div>
+          <div class="tech-item" data-category="frontend backend">
+            <div class="tech-icon">⚡</div>
+            <div class="tech-name">TypeScript</div>
+            <div class="tech-cat">Language</div>
+          </div>
+          <div class="tech-item" data-category="frontend backend">
+            <div class="tech-icon">📜</div>
+            <div class="tech-name">JavaScript</div>
+            <div class="tech-cat">Language</div>
+          </div>
+          <div class="tech-item" data-category="frontend">
+            <div class="tech-icon">🎯</div>
+            <div class="tech-name">Dart</div>
+            <div class="tech-cat">Mobile Lang</div>
+          </div>
+          <div class="tech-item" data-category="frontend">
+            <div class="tech-icon">🤖</div>
+            <div class="tech-name">Kotlin</div>
+            <div class="tech-cat">Mobile Lang</div>
+          </div>
+          <div class="tech-item" data-category="creative">
+            <div class="tech-icon">🔷</div>
+            <div class="tech-name">C#</div>
+            <div class="tech-cat">Game Lang</div>
+          </div>
+
+          <!-- Frontend & Mobile -->
+          <div class="tech-item" data-category="frontend">
+            <div class="tech-icon">⚛️</div>
+            <div class="tech-name">React.js</div>
+            <div class="tech-cat">Frontend</div>
+          </div>
+          <div class="tech-item" data-category="frontend">
+            <div class="tech-icon">▲</div>
+            <div class="tech-name">Next.js</div>
+            <div class="tech-cat">Framework</div>
+          </div>
+          <div class="tech-item" data-category="frontend">
+            <div class="tech-icon">🎨</div>
+            <div class="tech-name">Tailwind CSS</div>
+            <div class="tech-cat">Styling</div>
+          </div>
+          <div class="tech-item" data-category="frontend">
+            <div class="tech-icon">📱</div>
+            <div class="tech-name">Flutter</div>
+            <div class="tech-cat">Cross-Platform</div>
+          </div>
+          <div class="tech-item" data-category="frontend">
+            <div class="tech-icon">🌐</div>
+            <div class="tech-name">HTML5 / CSS3</div>
+            <div class="tech-cat">Core Web</div>
+          </div>
+
+          <!-- Backend & Cloud -->
+          <div class="tech-item" data-category="backend">
+            <div class="tech-icon">🚀</div>
+            <div class="tech-name">FastAPI</div>
+            <div class="tech-cat">High-Speed API</div>
+          </div>
+          <div class="tech-item" data-category="backend">
+            <div class="tech-icon">🟩</div>
+            <div class="tech-name">Node.js</div>
+            <div class="tech-cat">Runtime</div>
+          </div>
+          <div class="tech-item" data-category="backend">
+            <div class="tech-icon">🚂</div>
+            <div class="tech-name">Express.js</div>
+            <div class="tech-cat">Microservices</div>
+          </div>
+          <div class="tech-item" data-category="backend">
+            <div class="tech-icon">⚡</div>
+            <div class="tech-name">Supabase</div>
+            <div class="tech-cat">BaaS & SQL</div>
+          </div>
+          <div class="tech-item" data-category="backend">
+            <div class="tech-icon">🔥</div>
+            <div class="tech-name">Firebase</div>
+            <div class="tech-cat">Realtime DB</div>
+          </div>
+          <div class="tech-item" data-category="backend">
+            <div class="tech-icon">🗄️</div>
+            <div class="tech-name">SQLite (FTS5)</div>
+            <div class="tech-cat">Full-Text SQL</div>
+          </div>
+          <div class="tech-item" data-category="backend">
+            <div class="tech-icon">🍃</div>
+            <div class="tech-name">MongoDB</div>
+            <div class="tech-cat">NoSQL</div>
+          </div>
+          <div class="tech-item" data-category="backend">
+            <div class="tech-icon">☁️</div>
+            <div class="tech-name">Cloudflare</div>
+            <div class="tech-cat">Edge & DNS</div>
+          </div>
+          <div class="tech-item" data-category="backend">
+            <div class="tech-icon">▲</div>
+            <div class="tech-name">Vercel</div>
+            <div class="tech-cat">Deployment</div>
+          </div>
+
+          <!-- AI & Security -->
+          <div class="tech-item" data-category="ai-cyber">
+            <div class="tech-icon">🧠</div>
+            <div class="tech-name">AI Voice & RAG</div>
+            <div class="tech-cat">Applied AI</div>
+          </div>
+          <div class="tech-item" data-category="ai-cyber">
+            <div class="tech-icon">🛡️</div>
+            <div class="tech-name">PikePDF</div>
+            <div class="tech-cat">Security Tool</div>
+          </div>
+          <div class="tech-item" data-category="ai-cyber">
+            <div class="tech-icon">🔍</div>
+            <div class="tech-name">Vulnerability Audit</div>
+            <div class="tech-cat">Cybersecurity</div>
+          </div>
+          <div class="tech-item" data-category="ai-cyber">
+            <div class="tech-icon">🤖</div>
+            <div class="tech-name">Antigravity</div>
+            <div class="tech-cat">Agent AI Studio</div>
+          </div>
+
+          <!-- Creative & Game -->
+          <div class="tech-item" data-category="creative">
+            <div class="tech-icon">🎮</div>
+            <div class="tech-name">Unity</div>
+            <div class="tech-cat">Game Engine</div>
+          </div>
+          <div class="tech-item" data-category="creative">
+            <div class="tech-icon">🕹️</div>
+            <div class="tech-name">Godot</div>
+            <div class="tech-cat">2D/3D Engine</div>
+          </div>
+          <div class="tech-item" data-category="creative">
+            <div class="tech-icon">🎞️</div>
+            <div class="tech-name">Premiere Pro</div>
+            <div class="tech-cat">Video Editing</div>
+          </div>
+          <div class="tech-item" data-category="creative">
+            <div class="tech-icon">🖼️</div>
+            <div class="tech-name">Photoshop</div>
+            <div class="tech-cat">Raster Design</div>
+          </div>
+          <div class="tech-item" data-category="creative">
+            <div class="tech-icon">✒️</div>
+            <div class="tech-name">Illustrator</div>
+            <div class="tech-cat">Vector Branding</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🚀 5. Featured Projects (VisionOS 3D Perspective Cards) -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header reveal-init">
+          <div class="section-badge">
+            <span class="dot"></span>
+            <span>Proof of Work</span>
+          </div>
+          <h2 class="section-title">
+            Featured <span class="gradient-text">Creations.</span>
+          </h2>
+          <p class="section-description">
+            Selected engineering and creative solutions spanning autonomous AI systems, biometric security, streaming architectures, and specialized utilities.
+          </p>
+        </div>
+
+        <!-- Project Segmented Filter -->
+        <div class="segmented-wrap reveal-init delay-1">
+          <div class="segmented-control" id="project-filters">
+            <button class="segmented-pill active" data-filter="all">All Projects</button>
+            <button class="segmented-pill" data-filter="ai">AI & Voice</button>
+            <button class="segmented-pill" data-filter="fullstack">Full-Stack Platforms</button>
+            <button class="segmented-pill" data-filter="security">Security & Utilities</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: Zeno -->
+          <div class="project-card specular-card tilt-card reveal-init delay-1" data-category="ai">
+            <div class="tilt-inner">
+              <div class="project-top">
+                <span class="project-badge">ACTIVE DEVELOPMENT</span>
+                <div class="project-icon-box">🎙️</div>
+              </div>
+              <h3 class="project-title">Zeno — Personal AI Assistant</h3>
+              <p class="project-desc">
+                A voice-activated autonomous AI assistant engineered for comprehensive PC control, code generation, reasoning, cybersecurity tasks, and workflow automation.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">AI Voice</span>
+                <span class="project-tag">Automation</span>
+                <span class="project-tag">Cybersecurity</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <span class="project-link" style="color: var(--accent-primary);">
+                <span>Featured AI System</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </div>
+
+          <!-- Project 2: PayMetrics -->
+          <div class="project-card specular-card tilt-card reveal-init delay-2" data-category="ai security">
+            <div class="tilt-inner">
+              <div class="project-top">
+                <span class="project-badge">BIOMETRICS & FINTECH</span>
+                <div class="project-icon-box">✋</div>
+              </div>
+              <h3 class="project-title">PayMetrics — Palm Verification</h3>
+              <p class="project-desc">
+                Contactless palm-verification payment system. Extracts MediaPipe 3D landmarks and HOG texture features into biometric embeddings, running inside an isolated cryptographic enclave with AES-256-GCM and HMAC hash chain ledgers.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Computer Vision</span>
+                <span class="project-tag">MediaPipe</span>
+                <span class="project-tag">FastAPI</span>
+                <span class="project-tag">Enclave AES-256</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <span class="project-link" style="color: var(--accent-primary);">
+                <span>Isolated Enclave Security</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </div>
+
+          <!-- Project 3: Sahakar Mitra -->
+          <div class="project-card specular-card tilt-card reveal-init delay-3" data-category="ai">
+            <div class="tilt-inner">
+              <div class="project-top">
+                <span class="project-badge">RAG ARCHITECTURE</span>
+                <div class="project-icon-box">🌾</div>
+              </div>
+              <h3 class="project-title">Sahakar Mitra — Cooperative AI</h3>
+              <p class="project-desc">
+                A multilingual, voice-first AI platform built to assist cooperative agricultural and rural communities with legal, agricultural, and technological workflows via retrieval-augmented generation.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">RAG</span>
+                <span class="project-tag">Multilingual AI</span>
+                <span class="project-tag">Voice Interaction</span>
+                <span class="project-tag">FastAPI</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <span class="project-link" style="color: var(--accent-primary);">
+                <span>Active Innovation</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </div>
+
+          <!-- Project 4: Movie Streaming Platform -->
+          <div class="project-card specular-card tilt-card reveal-init delay-1" data-category="fullstack">
+            <div class="tilt-inner">
+              <div class="project-top">
+                <span class="project-badge">PRODUCTION PLATFORM</span>
+                <div class="project-icon-box">🎬</div>
+              </div>
+              <h3 class="project-title">Movie Streaming Platform</h3>
+              <p class="project-desc">
+                A high-performance media streaming platform designed with a glassmorphic user experience, automated crawler pipelines, TMDB entity resolution, and SQLite FTS5 instant indexing.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">TypeScript</span>
+                <span class="project-tag">FastAPI</span>
+                <span class="project-tag">SQLite FTS5</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/tech-rio" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>View on GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 5: PDF Password Recovery Utility -->
+          <div class="project-card specular-card tilt-card reveal-init delay-2" data-category="security">
+            <div class="tilt-inner">
+              <div class="project-top">
+                <span class="project-badge">SECURITY TOOL</span>
+                <div class="project-icon-box">🔐</div>
+              </div>
+              <h3 class="project-title">PDF Password Recovery Utility</h3>
+              <p class="project-desc">
+                A Python-based utility engineered to recover access to password-protected PDF documents through authorized cryptographic and algorithmic recovery workflows.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">PikePDF</span>
+                <span class="project-tag">Cryptographic Analysis</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <span class="project-link" style="color: var(--accent-secondary);">
+                <span>Security Research Utility</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </div>
+
+          <!-- Project 6: Anti-Stress Game Collection -->
+          <div class="project-card specular-card tilt-card reveal-init delay-3" data-category="security">
+            <div class="tilt-inner">
+              <div class="project-top">
+                <span class="project-badge">INTERACTIVE GAME</span>
+                <div class="project-icon-box">🎮</div>
+              </div>
+              <h3 class="project-title">Anti-Stress Game Collection</h3>
+              <p class="project-desc">
+                A curated collection of sensory interactive mini-games created in Unity and C#, designed to provide calming interaction and tactile relaxation.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Unity</span>
+                <span class="project-tag">C#</span>
+                <span class="project-tag">Interactive Physics</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <span class="project-link" style="color: var(--accent-primary);">
+                <span>Interactive Entertainment</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🗺️ 6. Chronological Journey Timeline -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header reveal-init">
+          <div class="section-badge">
+            <span class="dot"></span>
+            <span>Milestones</span>
+          </div>
+          <h2 class="section-title">
+            The Journey <span class="gradient-text">So Far.</span>
+          </h2>
+          <p class="section-description">
+            From childhood curiosity to building scalable applications, delivering for 120+ clients, and founding a technology company.
+          </p>
+        </div>
+
+        <div class="timeline-wrap">
+          <div class="timeline-spine"></div>
+
+          <!-- Step 1: Pre-coding Curiosity -->
+          <div class="timeline-item reveal-init delay-1">
+            <div class="timeline-node"></div>
+            <div class="timeline-card specular-card">
+              <div class="timeline-year">THE BEGINNING</div>
+              <h3 class="timeline-title">Curiosity Before Coding</h3>
+              <p class="timeline-desc">
+                Fascinated by computers, smartphones, and software beneath the surface. I wasn't satisfied with simply using tech—I had to understand how systems communicate and function at root levels.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2: 2024 -->
+          <div class="timeline-item reveal-init delay-2">
+            <div class="timeline-node"></div>
+            <div class="timeline-card specular-card">
+              <div class="timeline-year">2024 · 1.5 YEARS AGO</div>
+              <h3 class="timeline-title">Conquering Intimidation</h3>
+              <p class="timeline-desc">
+                Began learning development. Coding felt overwhelming initially, but curiosity became stronger than fear. Mastered core fundamentals across Python, JavaScript, and systems thinking.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3: 2025 -->
+          <div class="timeline-item reveal-init delay-3">
+            <div class="timeline-node"></div>
+            <div class="timeline-card specular-card">
+              <div class="timeline-year">2025 · MILESTONE</div>
+              <h3 class="timeline-title">Building My First Website</h3>
+              <p class="timeline-desc">
+                Deployed my first live website. Transformed my perspective from theoretical learning to shipping real-world digital products that users engage with.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4: Freelance Scale -->
+          <div class="timeline-item reveal-init delay-4">
+            <div class="timeline-node"></div>
+            <div class="timeline-card specular-card">
+              <div class="timeline-year">2025 - 2026 · SCALE</div>
+              <h3 class="timeline-title">120+ Client Projects Delivered</h3>
+              <p class="timeline-desc">
+                Scaled into professional client work. Completed over 120 freelance deliverables spanning web development, graphic design, video editing, and custom technical solutions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 5: Startup 2026 -->
+          <div class="timeline-item reveal-init delay-5">
+            <div class="timeline-node"></div>
+            <div class="timeline-card specular-card">
+              <div class="timeline-year">2026 · PRESENT</div>
+              <h3 class="timeline-title">Startup Co-Founder & B.Tech CSE</h3>
+              <p class="timeline-desc">
+                Co-founded our technology startup with a vision to build innovative digital products and deliver client services. Simultaneously pursuing B.Tech in CSE with deep focus on AI and Cybersecurity.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 6: Future Horizon -->
+          <div class="timeline-item reveal-init delay-6">
+            <div class="timeline-node"></div>
+            <div class="timeline-card specular-card">
+              <div class="timeline-year">HORIZON · LIFELONG</div>
+              <h3 class="timeline-title">Ethical Hacking & Security Research</h3>
+              <p class="timeline-desc">
+                Dedicated to becoming a respected cybersecurity professional and ethical hacker, identifying zero-days, understanding low-level systems, and building resilient security architectures.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 📬 7. Interactive Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header reveal-init">
+          <div class="section-badge">
+            <span class="dot"></span>
+            <span>Get in Touch</span>
+          </div>
+          <h2 class="section-title">
+            Let's Build Something <span class="gradient-text">Meaningful.</span>
+          </h2>
+          <p class="section-description">
+            Whether it's a website, full-stack application, startup idea, cybersecurity project, or creative venture—I'm always excited to connect.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Details Card -->
+          <div class="contact-card specular-card reveal-init delay-1">
+            <h3 style="font-family: var(--font-display); font-size: 1.6rem; margin-bottom: 12px; color: var(--text-primary);">
+              Open for Collaborations
+            </h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+              Based in <strong>Jaipur, Rajasthan, India</strong>. Available for freelance opportunities, startup discussions, and ambitious engineering projects.
+            </p>
+
+            <!-- Click to Copy Email Pill -->
+            <div class="contact-email-pill" id="copy-email-btn" data-email="aadarsh21908@gmail.com" title="Click to copy email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span>aadarsh21908@gmail.com</span>
+              <span style="font-size: 0.75rem; opacity: 0.7; margin-left: auto;">(Click to copy)</span>
+            </div>
+
+            <div style="margin-bottom: 20px; font-size: 0.8125rem; font-family: var(--font-mono); color: var(--text-tertiary); text-transform: uppercase;">
+              Connect via Socials:
+            </div>
+
+            <div class="social-links">
+              <a href="https://github.com/tech-rio" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <span>GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/aadarsh-soni-326a73413" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <span>LinkedIn</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+              <a href="https://www.instagram.com/shadow3d.aadarxh" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <span>Instagram</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Direct Message Form Card -->
+          <div class="contact-card specular-card reveal-init delay-2">
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label class="form-label" for="user-name">Your Name</label>
+                <input class="form-input" type="text" id="user-name" name="name" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="user-email">Email Address</label>
+                <input class="form-input" type="email" id="user-email" name="email" placeholder="john@example.com" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="user-message">Project or Inquiry</label>
+                <textarea class="form-input" id="user-message" name="message" placeholder="Tell me about your project, timeline, or idea..." required></textarea>
+              </div>
+              <button type="submit" class="btn-primary shimmer-btn" style="width: 100%; justify-content: center;">
+                <span>Send Message</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        © 2026 Aadarsh Soni. All rights reserved. Built with precision.
+      </div>
+      <button class="btn-back-to-top" id="back-to-top">
+        <span>Back to Top</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- 📋 Spring Toast Notification Feedback -->
+  <div class="toast-notice" id="toast-notice" role="alert">
+    <span style="font-size: 1.2rem;">✨</span>
+    <span id="toast-text">Email copied to clipboard!</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/prism-wave.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
