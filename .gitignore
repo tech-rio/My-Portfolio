@@ -1,0 +1,15 @@
+# Netlify
+.netlify
+
+# Dependencies & System
+node_modules/
+.DS_Store
+Thumbs.db
+
+# IDE & Editor
+.vscode/
+.idea/
+
+# Agent artifacts
+.agents/
+skills-lock.json
